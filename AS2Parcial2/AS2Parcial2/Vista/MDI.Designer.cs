@@ -33,16 +33,23 @@ namespace AS2Parcial2
             this.pruebaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnVerPuestos = new System.Windows.Forms.ToolStripMenuItem();
             this.btnVerDepartamentos = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnVerEmpleados = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insertarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnInsertarPuesto = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnInsertarEmpleado = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnInsertarDepartamento = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnActualizarPuesto = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnActualizarEmpleado = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnActualizarDepartamento = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnEliminarPuesto = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnEliminarEmpleado = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnEliminarDepartamento = new System.Windows.Forms.ToolStripMenuItem();
             this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.herramientasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnEliminarPuesto = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +71,8 @@ namespace AS2Parcial2
             // 
             this.pruebaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnVerPuestos,
-            this.btnVerDepartamentos});
+            this.btnVerDepartamentos,
+            this.btnVerEmpleados});
             this.pruebaToolStripMenuItem.Name = "pruebaToolStripMenuItem";
             this.pruebaToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.pruebaToolStripMenuItem.Text = "Catálogos";
@@ -73,15 +81,23 @@ namespace AS2Parcial2
             // btnVerPuestos
             // 
             this.btnVerPuestos.Name = "btnVerPuestos";
-            this.btnVerPuestos.Size = new System.Drawing.Size(150, 22);
+            this.btnVerPuestos.Size = new System.Drawing.Size(180, 22);
             this.btnVerPuestos.Text = "Puestos";
             this.btnVerPuestos.Click += new System.EventHandler(this.btnVerPuestos_Click);
             // 
             // btnVerDepartamentos
             // 
             this.btnVerDepartamentos.Name = "btnVerDepartamentos";
-            this.btnVerDepartamentos.Size = new System.Drawing.Size(150, 22);
+            this.btnVerDepartamentos.Size = new System.Drawing.Size(180, 22);
             this.btnVerDepartamentos.Text = "Departamento";
+            this.btnVerDepartamentos.Click += new System.EventHandler(this.btnVerDepartamentos_Click);
+            // 
+            // btnVerEmpleados
+            // 
+            this.btnVerEmpleados.Name = "btnVerEmpleados";
+            this.btnVerEmpleados.Size = new System.Drawing.Size(180, 22);
+            this.btnVerEmpleados.Text = "Empleado";
+            this.btnVerEmpleados.Click += new System.EventHandler(this.btnVerEmpleados_Click);
             // 
             // procesosToolStripMenuItem
             // 
@@ -96,7 +112,9 @@ namespace AS2Parcial2
             // insertarToolStripMenuItem
             // 
             this.insertarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnInsertarPuesto});
+            this.btnInsertarPuesto,
+            this.btnInsertarEmpleado,
+            this.btnInsertarDepartamento});
             this.insertarToolStripMenuItem.Name = "insertarToolStripMenuItem";
             this.insertarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.insertarToolStripMenuItem.Text = "Insertar";
@@ -104,14 +122,30 @@ namespace AS2Parcial2
             // btnInsertarPuesto
             // 
             this.btnInsertarPuesto.Name = "btnInsertarPuesto";
-            this.btnInsertarPuesto.Size = new System.Drawing.Size(110, 22);
+            this.btnInsertarPuesto.Size = new System.Drawing.Size(150, 22);
             this.btnInsertarPuesto.Text = "Puesto";
             this.btnInsertarPuesto.Click += new System.EventHandler(this.btnInsertarPuesto_Click);
+            // 
+            // btnInsertarEmpleado
+            // 
+            this.btnInsertarEmpleado.Name = "btnInsertarEmpleado";
+            this.btnInsertarEmpleado.Size = new System.Drawing.Size(150, 22);
+            this.btnInsertarEmpleado.Text = "Empleado";
+            this.btnInsertarEmpleado.Click += new System.EventHandler(this.btnInsertarEmpleado_Click);
+            // 
+            // btnInsertarDepartamento
+            // 
+            this.btnInsertarDepartamento.Name = "btnInsertarDepartamento";
+            this.btnInsertarDepartamento.Size = new System.Drawing.Size(150, 22);
+            this.btnInsertarDepartamento.Text = "Departamento";
+            this.btnInsertarDepartamento.Click += new System.EventHandler(this.btnInsertarDepartamento_Click);
             // 
             // actualizarToolStripMenuItem
             // 
             this.actualizarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnActualizarPuesto});
+            this.btnActualizarPuesto,
+            this.btnActualizarEmpleado,
+            this.btnActualizarDepartamento});
             this.actualizarToolStripMenuItem.Name = "actualizarToolStripMenuItem";
             this.actualizarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.actualizarToolStripMenuItem.Text = "Actualizar";
@@ -119,9 +153,54 @@ namespace AS2Parcial2
             // btnActualizarPuesto
             // 
             this.btnActualizarPuesto.Name = "btnActualizarPuesto";
-            this.btnActualizarPuesto.Size = new System.Drawing.Size(110, 22);
+            this.btnActualizarPuesto.Size = new System.Drawing.Size(150, 22);
             this.btnActualizarPuesto.Text = "Puesto";
             this.btnActualizarPuesto.Click += new System.EventHandler(this.btnActualizarPuesto_Click);
+            // 
+            // btnActualizarEmpleado
+            // 
+            this.btnActualizarEmpleado.Name = "btnActualizarEmpleado";
+            this.btnActualizarEmpleado.Size = new System.Drawing.Size(150, 22);
+            this.btnActualizarEmpleado.Text = "Empleado";
+            this.btnActualizarEmpleado.Click += new System.EventHandler(this.btnActualizarEmpleado_Click);
+            // 
+            // btnActualizarDepartamento
+            // 
+            this.btnActualizarDepartamento.Name = "btnActualizarDepartamento";
+            this.btnActualizarDepartamento.Size = new System.Drawing.Size(150, 22);
+            this.btnActualizarDepartamento.Text = "Departamento";
+            this.btnActualizarDepartamento.Click += new System.EventHandler(this.btnActualizarDepartamento_Click);
+            // 
+            // eliminarToolStripMenuItem
+            // 
+            this.eliminarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnEliminarPuesto,
+            this.btnEliminarEmpleado,
+            this.btnEliminarDepartamento});
+            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarToolStripMenuItem.Text = "Eliminar";
+            // 
+            // btnEliminarPuesto
+            // 
+            this.btnEliminarPuesto.Name = "btnEliminarPuesto";
+            this.btnEliminarPuesto.Size = new System.Drawing.Size(150, 22);
+            this.btnEliminarPuesto.Text = "Puesto";
+            this.btnEliminarPuesto.Click += new System.EventHandler(this.btnEliminarPuesto_Click);
+            // 
+            // btnEliminarEmpleado
+            // 
+            this.btnEliminarEmpleado.Name = "btnEliminarEmpleado";
+            this.btnEliminarEmpleado.Size = new System.Drawing.Size(150, 22);
+            this.btnEliminarEmpleado.Text = "Empleado";
+            this.btnEliminarEmpleado.Click += new System.EventHandler(this.btnEliminarEmpleado_Click);
+            // 
+            // btnEliminarDepartamento
+            // 
+            this.btnEliminarDepartamento.Name = "btnEliminarDepartamento";
+            this.btnEliminarDepartamento.Size = new System.Drawing.Size(150, 22);
+            this.btnEliminarDepartamento.Text = "Departamento";
+            this.btnEliminarDepartamento.Click += new System.EventHandler(this.btnEliminarDepartamento_Click);
             // 
             // informesToolStripMenuItem
             // 
@@ -141,21 +220,6 @@ namespace AS2Parcial2
             this.ayudasToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.ayudasToolStripMenuItem.Text = "Ayudas";
             // 
-            // eliminarToolStripMenuItem
-            // 
-            this.eliminarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnEliminarPuesto});
-            this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.eliminarToolStripMenuItem.Text = "Eliminar";
-            // 
-            // btnEliminarPuesto
-            // 
-            this.btnEliminarPuesto.Name = "btnEliminarPuesto";
-            this.btnEliminarPuesto.Size = new System.Drawing.Size(180, 22);
-            this.btnEliminarPuesto.Text = "Puesto";
-            this.btnEliminarPuesto.Click += new System.EventHandler(this.btnEliminarPuesto_Click);
-            // 
             // MDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -165,7 +229,7 @@ namespace AS2Parcial2
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MDI";
-            this.Text = "Form1";
+            this.Text = "Jorge Eduardo González Campos - 0901 18 3920";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -188,6 +252,13 @@ namespace AS2Parcial2
         private System.Windows.Forms.ToolStripMenuItem btnActualizarPuesto;
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem btnEliminarPuesto;
+        private System.Windows.Forms.ToolStripMenuItem btnVerEmpleados;
+        private System.Windows.Forms.ToolStripMenuItem btnInsertarEmpleado;
+        private System.Windows.Forms.ToolStripMenuItem btnInsertarDepartamento;
+        private System.Windows.Forms.ToolStripMenuItem btnActualizarEmpleado;
+        private System.Windows.Forms.ToolStripMenuItem btnActualizarDepartamento;
+        private System.Windows.Forms.ToolStripMenuItem btnEliminarEmpleado;
+        private System.Windows.Forms.ToolStripMenuItem btnEliminarDepartamento;
     }
 }
 

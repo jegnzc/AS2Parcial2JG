@@ -50,14 +50,68 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion\ConexionODBC.cs" />
+    <Compile Include="Controlador\ControladorDepartamento.cs" />
+    <Compile Include="Controlador\ControladorEmpleado.cs" />
     <Compile Include="Controlador\ControladorPuestos.cs" />
+    <Compile Include="Modelo\DAO\DAODepartamento.cs" />
+    <Compile Include="Modelo\DAO\DAOEmpleado.cs" />
     <Compile Include="Modelo\DAO\DAOPuesto.cs" />
+    <Compile Include="Modelo\DTO\DTODepartamento.cs" />
+    <Compile Include="Modelo\DTO\DTOEmpleado.cs" />
     <Compile Include="Modelo\DTO\DTOPuesto.cs" />
-    <Compile Include="Vista\Puestos\ActualizarPuesto.cs">
+    <Compile Include="Vista\Departamento\ActualizarDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Puestos\ActualizarPuesto.Designer.cs">
-      <DependentUpon>ActualizarPuesto.cs</DependentUpon>
+    <Compile Include="Vista\Departamento\ActualizarDepartamento.Designer.cs">
+      <DependentUpon>ActualizarDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Departamento\AgregarDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Departamento\AgregarDepartamento.Designer.cs">
+      <DependentUpon>AgregarDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Departamento\CatalogoDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Departamento\CatalogoDepartamento.Designer.cs">
+      <DependentUpon>CatalogoDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Departamento\EliminarDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Departamento\EliminarDepartamento.Designer.cs">
+      <DependentUpon>EliminarDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Empleado\ActualizarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Empleado\ActualizarEmpleado.Designer.cs">
+      <DependentUpon>ActualizarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Empleado\AgregarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Empleado\AgregarEmpleado.Designer.cs">
+      <DependentUpon>AgregarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Empleado\CatalogoEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Empleado\CatalogoEmpleado.Designer.cs">
+      <DependentUpon>CatalogoEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Empleado\EliminarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Empleado\EliminarEmpleado.Designer.cs">
+      <DependentUpon>EliminarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Puestos\ActualizarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Puestos\ActualizarEmpleado.Designer.cs">
+      <DependentUpon>ActualizarEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\Puestos\AgregarPuesto.cs">
       <SubType>Form</SubType>
@@ -85,8 +139,32 @@
     <Compile Include="Vista\Puestos\EliminarPuesto.Designer.cs">
       <DependentUpon>EliminarPuesto.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vista\Puestos\ActualizarPuesto.resx">
-      <DependentUpon>ActualizarPuesto.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\Departamento\ActualizarDepartamento.resx">
+      <DependentUpon>ActualizarDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Departamento\AgregarDepartamento.resx">
+      <DependentUpon>AgregarDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Departamento\CatalogoDepartamento.resx">
+      <DependentUpon>CatalogoDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Departamento\EliminarDepartamento.resx">
+      <DependentUpon>EliminarDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Empleado\ActualizarEmpleado.resx">
+      <DependentUpon>ActualizarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Empleado\AgregarEmpleado.resx">
+      <DependentUpon>AgregarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Empleado\CatalogoEmpleado.resx">
+      <DependentUpon>CatalogoEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Empleado\EliminarEmpleado.resx">
+      <DependentUpon>EliminarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Puestos\ActualizarEmpleado.resx">
+      <DependentUpon>ActualizarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\Puestos\AgregarPuesto.resx">
       <DependentUpon>AgregarPuesto.cs</DependentUpon>

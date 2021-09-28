@@ -1,7 +1,9 @@
 ﻿
+using System.Windows.Forms;
+
 namespace AS2Parcial2.Vista.Puestos
 {
-    partial class ActualizarPuesto
+    partial class ActualizarPuesto : Form
     {
         /// <summary>
         /// Required designer variable.
