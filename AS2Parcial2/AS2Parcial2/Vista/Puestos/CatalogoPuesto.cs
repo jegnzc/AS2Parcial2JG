@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace AS2Parcial2
 {
-    public partial class Form2 : Form
+    public partial class CatalogoPuestos : Form
     {
-        public Form2()
+        public CatalogoPuestos()
         {
             InitializeComponent();
+            ControladorPuestos controlador = new ControladorPuestos(this);
         }
     }
 }

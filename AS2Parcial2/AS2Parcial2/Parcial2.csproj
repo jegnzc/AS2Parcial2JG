@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.90\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,25 +49,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Conexion\ConexionODBC.cs" />
+    <Compile Include="Controlador\ControladorPuestos.cs" />
+    <Compile Include="Modelo\DAO\DAOPuesto.cs" />
+    <Compile Include="Modelo\DTO\DTOPuesto.cs" />
+    <Compile Include="Vista\Puestos\ActualizarPuesto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Vista\Puestos\ActualizarPuesto.Designer.cs">
+      <DependentUpon>ActualizarPuesto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Vista\Puestos\AgregarPuesto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Vista\Puestos\AgregarPuesto.Designer.cs">
+      <DependentUpon>AgregarPuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\MDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\MDI.Designer.cs">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Puestos\CatalogoPuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Puestos\CatalogoPuesto.Designer.cs">
+      <DependentUpon>CatalogoPuesto.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Vista\Puestos\EliminarPuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Puestos\EliminarPuesto.Designer.cs">
+      <DependentUpon>EliminarPuesto.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vista\Puestos\ActualizarPuesto.resx">
+      <DependentUpon>ActualizarPuesto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\Puestos\AgregarPuesto.resx">
+      <DependentUpon>AgregarPuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\MDI.resx">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Puestos\CatalogoPuesto.resx">
+      <DependentUpon>CatalogoPuesto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -75,6 +106,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vista\Puestos\EliminarPuesto.resx">
+      <DependentUpon>EliminarPuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -88,5 +123,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
