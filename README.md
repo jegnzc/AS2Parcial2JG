@@ -1,1 +1,1 @@
-prueba
+### Parcial 2 - Análisis de Sistemas - Jorge González
